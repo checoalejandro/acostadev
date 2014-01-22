@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".BizneInfoActivity" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp" >
+
+        <include
+            android:id="@+id/tobActionBarContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/top_action_bar" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.98" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.06"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:paddingBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:id="@+id/survey_txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Información del estacionamiento"
+                    android:textAppearance="@style/bizinfo_title"
+                    android:textSize="@dimen/Title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_bottom_edittext"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/lbl_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textSize="@dimen/bizname_size" />
+
+                    <TextView
+                        android:id="@+id/lbl_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_bottom_size_button"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/lbl_neighborhood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_bottom_size_button"
+                        android:text="TextView" />
+                    
+                    <TextView
+                        android:id="@+id/lbl_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_bottom_size_button"
+                        android:text="TextView" />
+                    
+                    <TextView
+                        android:id="@+id/lbl_sdistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_bottom_size_button"
+                        android:text="TextView" />
+                    
+                    <TextView
+                        android:id="@+id/lbl_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_bottom_size_button"
+                        android:text="TextView" />
+                    
+                    <TextView
+                        android:id="@+id/lbl_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_bottom_size_button"
+                        android:text="TextView" />
+                    
+                    <TextView
+                        android:id="@+id/lbl_phones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_bottom_size_button"
+                        android:text="TextView" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include
+            android:id="@+id/butActionBarContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/bottom_action_bar" />
+    </LinearLayout>
+
+</RelativeLayout>

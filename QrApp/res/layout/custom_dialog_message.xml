@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:padding="15dp"       
+    >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout 
+            android:id="@+id/content_msg_warning"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:orientation="horizontal"        
+	        >
+	        
+	        <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:contentDescription="@string/btn_gps"
+		        android:src="@drawable/ic_warning_msg" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="10dp"	            
+	            android:textColor="#7C7C7C"
+	            android:text="Mensaje" />	        	        		       
+	
+	    </LinearLayout>
+	    
+        <ImageButton
+            android:id="@+id/dialog_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top|right"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/btn_gps"
+            android:paddingRight="2dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/ic_close_msg" />
+        
+        <!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_msg_warning">
+	        
+            	<View 
+			        android:layout_width="wrap_content"
+			        android:layout_height="2dp"
+			        android:layout_gravity="center_horizontal"
+			        android:background="#09adb9"/>
+            	
+        </LinearLayout> -->
+        
+    </RelativeLayout>    
+   	
+    <View 
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#09adb9"/>   	
+   	    
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"		    
+	    android:layout_margin="0dp"	    
+	    android:orientation="vertical"
+	    >                
+	 
+	    <TextView
+	        android:id="@+id/text_msg_dialog"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	       	                
+	        android:textColor="#7C7C7C"	        
+	        android:layout_margin="10dp"
+	        android:padding="5dp"
+	        android:text="hola"
+	         />      
+        
+    </LinearLayout>	
+   	    
+   	                                       
+    
+</LinearLayout>

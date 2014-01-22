@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionBarContent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_action_bar_background"
+    android:gravity="left|top|center_vertical"
+    android:height="40dp"
+    android:orientation="horizontal"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp" >
+
+    <!-- #E62538 -->
+
+    <LinearLayout
+        android:id="@+id/actionBarLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/actionBarRight"
+        android:gravity="left|center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/top_action_bar_background"
+            android:contentDescription="@string/btn_gps"
+            android:src="@drawable/btn_back_qrivo"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_go_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/top_action_bar_background"
+            android:contentDescription="@string/btn_gps"
+            android:src="@drawable/btn_back_qrivo" />
+
+        <ImageButton
+            android:id="@+id/btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/top_action_bar_background"
+            android:src="@drawable/ic_help"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_prizes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/top_action_bar_background"
+            android:contentDescription="@string/btn_gps"
+            android:src="@drawable/ic_fb"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lbl_name_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:padding="3dp"
+            android:text="@string/app_name"
+            android:textAppearance="@style/subtitle"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/actionBarLeft" >
+
+        <!-- app:font="Myriad_Pro_Semibold.ttf" -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/actionBarRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:gravity="left|center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_location_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_action_bar_background"
+            android:contentDescription="@string/btn_gps"
+            android:src="@drawable/btn_logout"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/top_action_bar_background"
+            android:src="@drawable/ic_home"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/top_action_bar_background"
+            android:src="@drawable/btn_user"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

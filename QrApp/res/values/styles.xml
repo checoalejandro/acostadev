@@ -1,0 +1,77 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="TitleStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">7dip</item>
+    </style>
+     <style name="CheckboxStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:padding">7dip</item>
+    </style>
+    <style name="RadioStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:padding">7dip</item>
+    </style>
+    
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+   		<item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="promo_description" parent="android:style/Theme.Dialog">
+   		<item name="android:gravity">left</item>
+    </style>
+    
+    <style name="promo_points" parent="android:style/Theme.Dialog">
+   		<item name="android:gravity">right</item>
+    </style>
+    <style name="subtitle" parent="android:style/Theme.Dialog">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="parent_cat" parent="android:style/Theme.Dialog">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="bizinfo_title" parent="android:style/Theme.Dialog">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="category_style" parent="@android:style/Widget.TextView">
+	    <item name="android:background">@drawable/rounded_top_edittext</item>
+	    <item name="android:textSize">20sp</item>
+	    <item name="android:shadowDx">1</item>
+    	<item name="android:shadowDy">1</item>
+    	<item name="android:padding">10dp</item>
+    	<item name="android:gravity">left</item>
+    </style>
+	<style name="address_style" parent="@android:style/Widget.TextView">
+	    <item name="android:background">@drawable/rounded_top_edittext</item>
+	    <item name="android:textSize">12sp</item>
+	    <item name="android:shadowDx">1</item>
+    	<item name="android:shadowDy">1</item>
+    	<item name="android:padding">10dp</item>
+	</style>
+	<style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/custom_ratingbar</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+	</style>
+
+</resources>

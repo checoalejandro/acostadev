@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butActionBarContent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tobActionBarContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/top_action_bar" />
+
+        <ExpandableListView
+            android:id="@+id/list01"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.03"
+            android:padding="5dp" >
+
+            </ExpandableListView>
+       	
+    </LinearLayout>
+
+    <include
+        android:id="@+id/butActionBarContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/bottom_action_bar" />
+
+</RelativeLayout>

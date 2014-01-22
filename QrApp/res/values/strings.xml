@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="promos_points">Tus puntos:</string>
+    <string name="bestlist_title">Lista de Promociones</string>
+    <string name="bizinfo_btn_prizes">Ir a canjear</string>
+    <string name="promos_userpoints">0</string>
+    <string name="promos_btn_redeem">Canjear</string>
+    <string name="promos_title">Promociones</string>
+    <string name="bizinfo_promotions">Promociones</string>
+    <string name="bizinfo_prizes">Premios</string>
+    <string name="qr_results">QR Results</string>
+    <string name="app_name">Qrivo</string>
+    <string name="app_name_inapp"></string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="http_server_standard">http://ubitip.area51.socialdot.net/index.php?option=com_qr&amp;controller=android&amp;view=android&amp;tmpl=component&amp;format=raw</string>
+    <string name="storage_foldername">Hello world!</string>
+    <string name="storage_filename">Hello world!</string>
+    <string name="name_component_controller">android</string>
+    <string name="title_activity_locations">Locations</string>
+    <string name="title_activity_trivia">Trivia</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="title_activity_survey">Survey</string>
+    <string name="title_activity_comment">Comment</string>
+    <string name="title_activity_message">Message</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="label_login_username">Usuario</string>
+    <string name="label_login_password">Contraseña</string>
+    <string name="label_login_btn_login">INICIAR SESIÓN</string>
+    <string name="label_login_btn_goto_register">REGÍSTRATE</string>
+    <string name="label_login_question">¿No tienes cuenta?</string>
+    <string name="label_login_email">Correo electrónico</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="error_incident_comunication">Hubo un error, intentelo de nuevo</string>
+    <string name="btn_gps">Gps</string>
+    <string name="warning_sdcard_readonly">Warning, la tarjeta SDCard sólo se puede leer.\nEsto no impedirá el buen funcionamiento</string>
+    <string name="error_sdcard_not_works">Error, la tarjeta SDCard no se puede usar, no tiene un formato aceptado o no está correctamente formateada.</string>
+    <string name="error_sdcard_removed">Error, la tarjeta SDCard no se encuentra, para utilizar el lector necesita insertar una tarjeta SD Card en el móvil.</string>
+    <string name="error_sdcard_shared">Error, la tarjeta SDCard no está montada porque se está utilizando conectada mediante USB. Desconectela y vuelva a intentarlo</string>
+    <string name="error_sdcard_unmountable">Error, la tarjeta SDCard no puede montarse.\nEsto puede deberse a que se encuentra corrupta o dañada.</string>
+    <string name="error_sdcard_unmounted">Error, la tarjeta SDCard está presente en el móvil pero no está montada. \n Móntela antes de usar el programa.</string>
+    <string name="info_sdcard_available">Info, sdcard lista para usarse</string>
+    <string name="warning_gps_not_available">Warning, el gps esta deshabilitado</string>
+    <string name="Warning_gps_out_of_service">Warning, el gps se encuentra en un area fuera de servicio</string>
+    <string name="Warning_gps_not_conection">Warning, el gps esta activo, pero no recibe datos aun, favor de esperar</string>
+    <string name="warning_gps_temporarily_unavailable">Warning, esta temporalmente fuera de servicio</string>
+    <string name="info_gps_not_available">La aplicación necesita el gps para funcionar correctamente, deseas activarlo ahora?</string>
+    <string name="warning_network_not_available">Warning, Para usar esta aplicación necesita conectarse a Internet.</string>
+    <string name="error_provider_unknown">Error, proveedor desconocido.\nverifique que tenga conexión a Internet y prenda el Gps.</string>
+    <string name="error_provider_null">Error, no se pudo seleccionar un dispositivo de localización.\nverifique que el gps este activo y tenga conexion a internet.</string>
+    <string name="info_network_available">Info, conexión a la red exitosa</string>
+    <string name="info_gps_available">Info, el gps esta activado</string>
+    <string name="warning_fails_internet_connection">Su conección a internet se ha interumpido.\nfavor de conectarse otra vez</string>
+    <string name="title_activity_qr_game">QrGameActivity</string>
+    <string name="title_activity_qr_results">QrResultsActivity</string>
+    <string name="title_activity_promos">PromosActivity</string>
+    <string name="title_activity_bizne_info">BizneInfoActivity</string>
+    <string name="lbl_bizinfo">Información del negocio</string>
+    <string name="title_activity_best_list">BestListActivity</string>
+    <string name="title_activity_bizne_info_best_list">BizneInfoBestListActivity</string>
+    <string name="qrgame_title">Juego de QRs</string>
+    <string name="qrgame_results">Tus resultados del Juego de QRs</string>
+    <string name="qrgame_locations">Ubicaciones de los demás QRs</string>
+    <string name="qrgame_prize">Premios y/o comentarios</string>
+    <string name="qrgame_btn_next">Enviar respuesta</string>
+    <string name="qrgame_again">Escanear otro código</string>
+    <string name="trivia_title">Trivia</string>
+    <string name="survey_title">Encuesta</string>
+    <string name="survey_btn_next">Siguiente</string>
+    <string name="main_description">Escanea tu código QR</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="help_title">Ayuda</string>
+    <string name="help_close">Volver</string>
+    <string name="help_text">Directorio de negocios en donde puedes obtener información de ellos gracias a las herramientas de ubicación que tú le proporciones. Cuenta con opciones de GPS, rutas, calles y zonas, que puedes crear para enfocar tu búsqueda de los negocios que gustes encontrar. Podrás conocer más del negocio en base a los tips de otros usuarios, obtener la ruta para llegar a él, teléfono, correo, etc. </string>
+    <string name="help_text2">Lectura de códigos QR (Quick Response) que estén asociados con nuestra base de datos de negocios de Qrivo. Para leer dichos códigos, deberá tener asociado el código QR, un negocio que esté registrado en esta biblioteca. En caso de que no pertenezca a un negocio, Qrivo podrá leer tu código e interactuar con él como un texto, llamada telefónica, un contacto o una página web.</string>
+    <string name="title_activity_favorites">FavoritesActivity</string>
+    <string name="favorites_title">Tus Favoritos</string>
+    <string name="title_activity_business">BusinessActivity</string>
+    <string name="business_categories">Categorías</string>
+    <string name="business_search">Buscar negocios</string>
+    <string name="business_zone">Zona</string>
+    <string name="business_route">Ruta</string>
+    <string name="business_gps">GPS</string>
+    <string name="business_street">Calle</string>
+    <string name="business_gosearch">Buscar</string>
+    <string name="title_activity_category_bizne">CategoryBizneActivity</string>
+    <string name="title_activity_bizne_list">BizneListActivity</string>
+    <string name="title_activity_quality_group">Selecciona los negocios que quieras valorar como </string>
+    <string name="title_activity_quality_group1">Selecciona los negocios que quieras valorar</string>
+    <string name="title_activity_saved_best_list">SavedBestListActivity</string>
+    <string name="savedbestlists_title">BestLists almacenadas</string>
+    <string name="title_activity_offer_group">OfferGroupActivity</string>
+    <string name="offergroup_title">Ofertas en</string>
+    <string name="qrgame_bizne">Información del negocio</string>
+    <string name="title_activity_favorite">FavoriteActivity</string>
+    <string name="favorite_title">Tus Favoritos</string>
+    <string name="favorite_business">Negocios</string>
+    <string name="favorite_bestlist">Listas de promociones</string>
+    <string name="favorite_ver_lista">Ver listas</string>
+    <string name="favorite_ver_negocios">Ver negocios</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="favorite">WebActivity</string>
+    <string name="bestlist_message">(Una semana de acceso en favoritos)</string>
+    <string name="title_activity_quality_bizne_group">QualityBizneGroupActivity</string>
+    <string name="quality_dialog_verygood">Muy bueno</string>
+    <string name="quality_dialog_good">Bueno</string>
+    <string name="quality_dialog_regular">Regular</string>
+    <string name="quality_dialog_bad">Malo</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="dialog_select_region_title">Selecciona tu ciudad</string>
+    <string name="dialog_select_route_title">Selecciona una ruta</string>
+    <string name="dialog_select_region_button">Aceptar</string>
+    <string name="dialog_select_route_button">Aceptar</string>
+    <string name="your_offers">Tus ofertas especiales</string>
+    <string name="your_prizes">Tus premios especiales</string>
+    <string name="select_one"><i>Selecciona una</i></string>
+
+    <string-array name="business_search_distance_radio">
+        <item>100 m</item>
+        <item>500 m</item>
+        <item>1 km</item>
+        <item>2 km</item>
+        <item>5 km</item>
+    </string-array>
+    <string-array name="business_search_distance_street">
+        <item>0 m</item>
+        <item>100 m</item>
+        <item>500 m</item>
+        <item>1 km</item>
+    </string-array>
+    <string-array name="maptips_times">
+        <item>Fijo</item>
+        <item>30 min</item>
+        <item>1 hr</item>
+        <item>2 hr</item>
+        <item>3 hr</item>
+        <item>4 hr</item>
+        <item>5 hr</item>
+        <item>6 hr</item>
+        <item>7 hr</item>
+        <item>8 hr</item>
+        <item>9 hr</item>
+        <item>10 hr</item>
+        <item>11 hr</item>
+        <item>12 hr</item>
+        <item>13 hr</item>
+        <item>14 hr</item>
+        <item>15 hr</item>
+        <item>16 hr</item>
+        <item>17 hr</item>
+        <item>18 hr</item>
+        <item>19 hr</item>
+        <item>20 hr</item>
+        <item>21 hr</item>
+        <item>22 hr</item>
+        <item>23 hr</item>
+        <item>24 hr</item>
+    </string-array>
+
+    <string name="title_activity_new_zone">NewZoneActivity</string>
+    <string name="nooffers">No existen ofertas aún</string>
+    <string name="noplans">No existen planes aún</string>
+    <string name="notips">Sé el primero en agregar un tip</string>
+    <string name="nointeractions">No existen interacciones aún</string>
+    <string name="dialog_select_zone_title">Selecciona una zona o crea una nueva</string>
+    <string name="dialog_select_zone_btn">Aceptar</string>
+    <string name="business_searchtype">Define tu búsqueda de área</string>
+    <string name="business_radio">Selecciona el radio</string>
+    <string name="business_dis">Distancia a la calle</string>
+    <string name="title_activity_map_tips">MapTipsActivity</string>
+    <string name="title_activity_parking">ParkingActivity</string>
+    <string name="title_activity_bizne_data">BizneDataActivity</string>
+    <string name="title_activity_activity_group">ActivityGroupActivity</string>
+    <string name="title_activity_offers">OffersActivity</string>
+    <string name="title_activity_user_offers">UserOffersActivity</string>
+    <string name="title_activity_user_prizes">UserPrizesActivity</string>
+    <string name="title_activity_only_activity_group">OnlyActivityGroupActivity</string>
+    <string name="title_activity_bizne_info_offer_group">BizneInfoOfferGroupActivity</string>
+    <string name="title_activity_passport">PassportActivity</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butActionBarContent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tobActionBarContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/top_action_bar" />
+
+        <TextView
+            android:id="@+id/useroffers_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/your_offers"
+            android:textSize="18sp"
+            android:typeface="normal" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp" >
+
+            <TableLayout
+                android:id="@+id/TableLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="0"
+                android:stretchColumns="1" >
+ 
+		    	<TableRow 
+		    	    android:id="@+id/TableRow01" 
+		    	    android:layout_width="wrap_content" 
+		    	    android:layout_height="wrap_content">
+		    	    
+		      		
+		    	</TableRow>
+		 
+		  	</TableLayout>
+
+        </ScrollView>
+       	
+    </LinearLayout>
+
+    <include
+        android:id="@+id/butActionBarContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/bottom_action_bar" />
+
+</RelativeLayout>

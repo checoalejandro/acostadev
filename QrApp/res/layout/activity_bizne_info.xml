@@ -1,0 +1,429 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".BizneInfoActivity" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp" >
+
+        <include
+            android:id="@+id/tobActionBarContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/top_action_bar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.06"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/lbl_bizname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="@string/lbl_bizinfo"
+                    android:textAppearance="@style/bizinfo_title"
+                    android:textSize="@dimen/Title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_bottom_edittext"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/lbl_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_bottom_size_button"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/lbl_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_bottom_size_button"
+                        android:text="TextView" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center_vertical|center_horizontal|center" >
+
+                        <Button
+                            android:id="@+id/btn_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:contentDescription="Llamar"
+                            android:background="@drawable/ic_phone" />
+
+                        <Button
+                            android:id="@+id/btn_mail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:contentDescription="Enviar correo"
+                            android:background="@drawable/ic_mail" />
+
+                        <Button
+                            android:id="@+id/business_map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="@drawable/ic_map"
+                            android:contentDescription="Mapa" />
+
+                        <Button
+                            android:id="@+id/business_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:contentDescription="Agregar un tip"
+                            android:background="@drawable/tip" />
+
+                        <Button
+                            android:id="@+id/business_like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:contentDescription="Me gusta"
+                            android:background="@drawable/ic_like" />
+
+                        <Button
+                            android:id="@+id/business_checkin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:contentDescription="Hacer Checkin"
+                            android:background="@drawable/ic_checkin_biz" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" >
+
+                        <TextView
+                            android:id="@+id/lbl_telephone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/padding_bottom_size_button"
+                            android:text="TextView"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" >
+
+                        <TextView
+                            android:id="@+id/lbl_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/padding_bottom_size_button"
+                            android:text="TextView"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/bizneinfo_offers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_bottom_edittext_selected"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="10dp"
+                        android:text="0\nOfertas"
+                        android:textAppearance="@style/subtitle"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/bizneinfo_prizes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_bottom_edittext"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="11dp"
+                        android:paddingRight="11dp"
+                        android:paddingTop="10dp"
+                        android:text="0\nPremios"
+                        android:textAppearance="@style/subtitle"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/bizneinfo_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_bottom_edittext"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:text="0\nTips"
+                        android:textAppearance="@style/subtitle"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/bizneinfo_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_bottom_edittext"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="10dp"
+                        android:text="0\nInteracciones"
+                        android:textAppearance="@style/subtitle"
+                        android:textSize="7sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/rounded_bottom_edittext"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                        <LinearLayout
+                            android:id="@+id/biz_layout_elements"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/comment_instructions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="@dimen/padding_bottom_size_button"
+                                android:paddingLeft="@dimen/padding_bottom_size_button"
+                                android:visibility="gone"
+                                android:text="Ofertas"
+                                android:textAppearance="@style/subtitle" />
+
+                            <TextView
+                                android:id="@+id/txt_nooffers"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:paddingBottom="@dimen/padding_bottom_size_button"
+                                android:paddingLeft="@dimen/padding_bottom_size_button"
+                                android:text="@string/nooffers"
+                                android:textAppearance="@style/subtitle"
+                                android:visibility="gone" />
+
+                            <ScrollView
+                            android:id="@+id/promos_scroll"
+				            android:layout_width="fill_parent"
+				            android:layout_height="fill_parent"
+				            android:fillViewport="true">
+	                            <LinearLayout
+	                                android:id="@+id/biz_promotions"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="match_parent"
+	                                android:layout_marginLeft="@dimen/padding_bottom_size_button"
+	                                android:layout_marginRight="@dimen/padding_bottom_size_button"
+	                                android:orientation="vertical"
+	                                android:paddingLeft="@dimen/padding_bottom_size_button"
+	                                android:paddingRight="@dimen/padding_bottom_size_button" >
+	                            </LinearLayout>
+                             </ScrollView>
+
+                            <TextView
+                                android:id="@+id/bestlist_lbl_listname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="@dimen/padding_bottom_size_button"
+                                android:paddingLeft="@dimen/padding_bottom_size_button"
+                                android:text="Planes de Puntos"
+                                android:textAppearance="@style/subtitle"
+                                android:visibility="gone" />
+                            
+                            <TextView
+                                android:id="@+id/txt_noprizes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:paddingBottom="@dimen/padding_bottom_size_button"
+                                android:paddingLeft="@dimen/padding_bottom_size_button"
+                                android:text="@string/noplans"
+                                android:textAppearance="@style/subtitle"
+                                android:visibility="gone" />
+
+	                         <ScrollView
+	                            android:id="@+id/prizes_scroll"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:fillViewport="true">
+	                            <LinearLayout
+	                                android:id="@+id/biz_prizes"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="match_parent"
+	                                android:layout_marginLeft="5dp"
+	                                android:layout_marginRight="5dp"
+	                                android:orientation="vertical"
+	                                android:paddingLeft="@dimen/padding_bottom_size_button"
+	                                android:paddingRight="@dimen/padding_bottom_size_button" >
+	                            </LinearLayout>
+
+                           	 </ScrollView>
+                            <TextView
+                                android:id="@+id/bizneinfo_tips_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="@dimen/padding_bottom_size_button"
+                                android:paddingLeft="@dimen/padding_bottom_size_button"
+                                android:text="Tips"
+                                android:textAppearance="@style/subtitle"
+                                android:visibility="gone" />
+                            
+                             <TextView
+                                android:id="@+id/txt_notips"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:paddingBottom="@dimen/padding_bottom_size_button"
+                                android:paddingLeft="@dimen/padding_bottom_size_button"
+                                android:textAppearance="@style/subtitle"
+                                android:visibility="gone"
+                                android:text="@string/notips" />
+                            
+                             <ScrollView
+                                android:id="@+id/tips_scroll"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:fillViewport="true">
+
+                                 <LinearLayout
+                                     android:id="@+id/biz_tips"
+                                     android:layout_width="match_parent"
+                  					 android:layout_height="match_parent"
+                                     android:layout_marginBottom="10dp"
+                                     android:layout_marginLeft="5dp"
+                                     android:layout_marginRight="5dp"
+                                     android:orientation="vertical"
+                                     android:paddingLeft="@dimen/padding_bottom_size_button"
+                                     android:paddingRight="@dimen/padding_bottom_size_button"
+                                     android:visibility="gone" >
+
+                            	</LinearLayout>
+                            </ScrollView>
+                            
+                            <TextView
+                                android:id="@+id/bizinfo_points_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:visibility="gone" />
+                            
+                             <TextView
+                                android:id="@+id/txt_nointeractions"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:paddingBottom="@dimen/padding_bottom_size_button"
+                                android:paddingLeft="@dimen/padding_bottom_size_button"
+                                android:textAppearance="@style/subtitle"
+                                android:visibility="gone"
+                                android:text="@string/nointeractions" />
+                            
+                            <ScrollView
+                                android:id="@+id/interactions_scroll"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:fillViewport="true">
+
+                                 <LinearLayout
+                                     android:id="@+id/biz_interactions"
+                                     android:layout_width="match_parent"
+                  					 android:layout_height="match_parent"
+                                     android:layout_marginBottom="10dp"
+                                     android:layout_marginLeft="5dp"
+                                     android:layout_marginRight="5dp"
+                                     android:orientation="vertical"
+                                     android:paddingLeft="@dimen/padding_bottom_size_button"
+                                     android:paddingRight="@dimen/padding_bottom_size_button"
+                                     android:visibility="gone" >
+
+                            	</LinearLayout>
+                            </ScrollView>
+
+                        </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        <include
+            android:id="@+id/butActionBarContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/bottom_action_bar" />
+    </LinearLayout>
+
+</RelativeLayout>

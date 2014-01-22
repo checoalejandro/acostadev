@@ -1,0 +1,183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollViewLogin" android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        >	
+	
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/background"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true" >
+	
+		 <EditText
+		     android:id="@+id/username"
+		     android:layout_width="220dp"
+		     android:layout_height="wrap_content"
+		     android:layout_below="@+id/imageView1"
+		     android:layout_centerInParent="true"
+		     android:layout_marginBottom="10dp"
+		     android:layout_marginLeft="15dp"
+		     android:layout_marginRight="15dp"
+		     android:layout_marginTop="24dp"
+		     android:hint="@string/label_login_username"
+		     android:background="@drawable/custom_edittext"
+		     android:paddingBottom="8dp"
+		     android:paddingLeft="10dp"
+		     android:paddingTop="9dp"
+		     android:textColor="#6C6564"
+		     android:textSize="16dip" />
+
+		 <!-- app:font="Helvetica.ttf" -->
+		 
+		  <EditText
+		      android:id="@+id/password"
+		      android:layout_width="220dp"
+		      android:layout_height="wrap_content"
+		      android:layout_below="@+id/username"
+		      android:layout_centerInParent="true"
+		      android:layout_marginBottom="10dp"
+		      android:layout_marginLeft="15dp"
+		      android:layout_marginRight="15dp"
+		      android:layout_marginTop="0dp"
+		      android:background="@drawable/custom_edittext"
+		      android:hint="@string/label_login_password"
+		      android:inputType="textPassword"
+		      android:paddingBottom="8dp"
+		      android:paddingLeft="10dp"
+		      android:paddingTop="9dp"
+		      android:textColor="#6C6564"
+		      android:textSize="16dip" />
+
+		  <!-- app:font="Helvetica.ttf" -->
+		  
+		  <Button 
+		      android:id="@+id/btn_login"
+		      android:layout_width="220dp"
+		      android:layout_height="wrap_content"
+		      android:layout_below="@+id/password"
+		      android:layout_centerInParent="true"
+		      android:paddingTop="11dp"
+	     	  android:paddingBottom="10dp"
+		      android:paddingLeft="10dp"
+		      android:layout_marginBottom="10dp"
+		      android:background="@drawable/btn_menu_main"		      		      
+		      android:gravity="center_horizontal|center_vertical"		      		     
+		      android:text="Iniciar sesion"
+		      android:textSize="16dp"
+		      android:textColor="#6C6564"
+		      />
+		  <!-- app:font="Helvetica.ttf" -->
+		  
+		  <Button
+		      android:id="@+id/btn_facebook_connect_login" 
+		      android:layout_width="220dp"
+		      android:layout_height="wrap_content"
+		      android:layout_below="@+id/btn_login"
+		      android:layout_centerInParent="true"
+		      android:paddingTop="@dimen/padding_top_size_button"
+	     	  android:paddingBottom="@dimen/padding_bottom_size_button"
+		      android:paddingLeft="@dimen/padding_left_size_button"
+		      android:layout_marginBottom="10dp"
+		      android:background="@drawable/btn_menu_main"		      
+		      android:drawableLeft="@drawable/ic_fb"
+		      android:drawablePadding="6dp"
+		      android:gravity="left|center_vertical"		      		     
+		      android:text="Iniciar sesion"
+		      android:textSize="16dp"
+		      android:textColor="#6C6564"	
+		      android:visibility="gone"	      
+		      />
+		  <!-- app:font="Helvetica.ttf" -->
+		  
+		  <Button 
+		      android:id="@+id/btn_go_to_register"
+		      android:layout_width="220dp"
+		      android:layout_height="wrap_content"
+		      android:layout_below="@+id/btn_facebook_connect_login"
+		      android:layout_centerInParent="true"
+		      android:paddingTop="@dimen/padding_top_size_button"
+	     	  android:paddingBottom="@dimen/padding_bottom_size_button"
+		      android:paddingLeft="@dimen/padding_left_size_button"
+		      android:background="@drawable/btn_menu_main"		      
+		      android:drawableLeft="@drawable/ic_register"
+		      android:drawablePadding="6dp"
+		      android:gravity="left|center_vertical"		      		     
+		      android:text="Registrate"
+		      android:textSize="16dp"
+		      android:textColor="#6C6564"
+		      />
+		  <!-- app:font="Helvetica.ttf" -->
+	
+		  <!-- <helper.widget.MyButton
+		      android:id="@+id/btn_login"		      
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_alignLeft="@+id/password"
+		      android:layout_alignRight="@+id/password"
+		      android:layout_below="@+id/password"
+		      android:background="@drawable/rounded_top_edittext"
+		      android:text="@string/label_login_btn_login"
+		      android:textSize="16dip" 
+		      app:font="Trade_Gothic_LT_Bold_Condensed.ttf"
+		      /> -->
+		  <!-- 
+		  	<helper.widget.MyButton
+		      android:id="@+id/btn_facebook_connect_login"
+		      style="@style/ButtonText"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_alignLeft="@+id/password"
+		      android:layout_alignRight="@+id/password"
+		      android:layout_below="@+id/btn_login"
+		      android:background="@drawable/btn_blue"
+		      android:text="@string/label_login_btn_facebook_connect"
+		      android:textSize="20dip" 
+		      app:font="Trade_Gothic_LT_Bold_Condensed.ttf"
+		      /> -->
+		  
+		   <!-- <helper.widget.MyTextView
+	        android:id="@+id/label_ask"
+	        android:layout_below="@+id/btn_facebook_connect_login"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginTop="30dp"
+		    android:layout_marginBottom="5dp"
+	        android:text="@string/label_login_question"
+	        android:textColor="#E72337"
+	        android:textSize="14dip" 
+			app:font="Trade_Gothic_LT_Bold_Condensed.ttf"
+	        />
+		   
+		   <helper.widget.MyButton
+		      android:id="@+id/btn_go_to_register"
+		      style="@style/ButtonText"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_alignLeft="@+id/password"
+		      android:layout_alignRight="@+id/password"
+		      android:layout_below="@+id/label_ask"
+		      android:background="@drawable/btn_green"
+		      android:text="@string/label_login_btn_goto_register"
+		      android:textSize="20dip" 
+		      app:font="Trade_Gothic_LT_Bold_Condensed.ttf"
+		      /> -->
+
+		  <ImageView
+		      android:id="@+id/imageView1"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_alignParentTop="true"
+		      android:layout_centerHorizontal="true"
+		      android:layout_marginBottom="30dp"
+		      android:layout_marginTop="97dp"
+		      android:src="@drawable/ic_qrivo" />
+		   	
+	</RelativeLayout>
+	
+	
+</ScrollView>

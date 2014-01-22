@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/actionBarContent"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="0dp"
+       android:background="@drawable/top_action_bar_background"
+       android:gravity="bottom|right|center_vertical"
+       android:height="0dp"
+       android:orientation="horizontal"
+       android:paddingBottom="0dp"
+       android:paddingTop="0dp" >
+
+    <ImageButton
+        android:id="@+id/btn_offers2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/top_action_bar_background"
+        android:contentDescription="Tus ofertas"
+        android:src="@drawable/ic_offer"
+        android:visibility="invisible" />
+
+        	<LinearLayout
+        	    android:id="@+id/actionBarRight"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentLeft="true"
+        	    android:layout_alignParentRight="true"
+        	    android:layout_gravity="center"
+        	    android:gravity="center"
+        	    android:orientation="horizontal" >
+        	    
+        	    <Button
+        	        android:id="@+id/txt_userprizes2"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:drawableLeft="@drawable/ic_trophy"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:gravity="bottom"
+        	        android:visibility="gone"
+        	        android:text="0" />
+        	    
+        	    <Button
+        	        android:id="@+id/txt_userpoints2"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:drawableLeft="@drawable/ic_chest"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:gravity="bottom"
+        	        android:visibility="gone"
+        	        android:text="0" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_offers"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:contentDescription="Tus ofertas"
+        	        android:src="@drawable/ic_offer"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_usrprizes"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:contentDescription="Tus premios"
+        	        android:src="@drawable/ic_prize"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_taxi"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/btn_taxis"
+        	        android:visibility="gone" />
+        	    
+				<ImageButton
+        	        android:id="@+id/btn_parking"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/btn_parkings"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_tip"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/btn_tip"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_route"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/ic_car"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_location"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/btn_location"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_previous"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/ic_previous"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_map"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/btn_map"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_next"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/ic_next"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_search"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/btn_search_bar"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_check"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/ic_check"
+        	        android:visibility="gone" />
+				
+        	    <ImageButton
+        	        android:id="@+id/btn_promo_redeem"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/ic_coin"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_bizinfo_scanqr"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:src="@drawable/ic_scanqr"
+        	        android:visibility="gone" />
+        	    
+        	    <ImageButton
+        	        android:id="@+id/btn_prizes3"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        	        android:background="@drawable/top_action_bar_background"
+        	        android:visibility="gone"
+        	        android:src="@drawable/ic_gifts" />
+
+        		<ImageButton
+        		    android:id="@+id/btn_add_favorite"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        		    android:background="@drawable/top_action_bar_background"
+        		    android:contentDescription="@string/btn_gps"
+        		    android:visibility="gone"
+        		    android:src="@drawable/ic_favorites" />
+        		
+        		<ImageButton
+        		    android:id="@+id/btn_favorites"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_marginLeft="16dp"
+        	        android:layout_marginRight="16dp"
+        		    android:visibility="gone"
+        		    android:background="@drawable/top_action_bar_background"
+        		    android:contentDescription="@string/btn_gps"
+        		    android:src="@drawable/btn_favorites" />
+ 
+			</LinearLayout>
+			          
+    </RelativeLayout>

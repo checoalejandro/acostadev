@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <item type="id" name="trivia_title" />
+        <item type="id" name="trivia_questiontext" />
+        <item type="id" name="trivia_instructionstext" />
+        <item type="id" name="trivia_answer0" />
+        <item type="id" name="trivia_answer1" />
+        <item type="id" name="trivia_answer2" />
+        <item type="id" name="trivia_answer3" />
+        <item type="id" name="trivia_answer4" />
+        <item type="id" name="btn_next" />
+        <item type="id" name="radio_group" />
+        <item type="id" name="check_group" />
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butActionBarContent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tobActionBarContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/top_action_bar" />
+
+        <LinearLayout
+            android:id="@+id/llprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.89"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:id="@+id/txtuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alejandro Acosta"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/txtusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aacosta"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="checoalejandro@gmail.com"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        
+        <Button
+             android:id="@+id/btn_business_change_city"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/rounded_bottom_edittext"
+             android:gravity="left"
+             android:padding="10dp"
+             android:text="Cambiar ciudad" />
+       	
+    </LinearLayout>
+
+    <include
+        android:id="@+id/butActionBarContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/bottom_action_bar" />
+
+</RelativeLayout>

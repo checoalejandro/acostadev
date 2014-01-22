@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.testapp.test"
+    android:versionCode="14"
+    android:versionName="1.2.11" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.testapp.test.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.testapp.test.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.testapp.test.permission.MAPS_RECEIVE" />
+
+    <!-- Goolge Maps API Key -->
+
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.testapp.test.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.testapp.test.QrGameQuestion"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.PostQuestion"
+            android:label="@string/title_activity_locations"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.Trivia"
+            android:label="@string/title_activity_trivia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.Test"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.ResultsActivity"
+            android:label="@string/title_activity_results"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.Survey"
+            android:label="@string/title_activity_survey"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.Comment"
+            android:label="@string/title_activity_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.Message"
+            android:label="@string/title_activity_message"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.QrGameActivity"
+            android:label="@string/title_activity_qr_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.QrResultsActivity"
+            android:label="@string/title_activity_qr_results"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.PromosActivity"
+            android:label="@string/title_activity_promos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.BizneInfoActivity"
+            android:label="@string/title_activity_bizne_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.BestListActivity"
+            android:label="@string/title_activity_best_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.BizneInfoBestListActivity"
+            android:label="@string/title_activity_bizne_info_best_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.FavoritesActivity"
+            android:label="@string/title_activity_favorites"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.BusinessActivity"
+            android:label="@string/title_activity_business"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.CategoryBizneActivity"
+            android:label="@string/title_activity_category_bizne"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.BizneListActivity"
+            android:label="@string/title_activity_bizne_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.QualityGroupActivity"
+            android:label="@string/title_activity_quality_group"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.SavedBestListActivity"
+            android:label="@string/title_activity_saved_best_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.OfferGroupActivity"
+            android:label="@string/title_activity_offer_group"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.FavoriteActivity"
+            android:label="@string/title_activity_favorite"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.WebActivity"
+            android:label="@string/title_activity_web"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.QualityBizneGroupActivity"
+            android:label="@string/title_activity_quality_bizne_group"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.MapActivity"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.BizneMapActivity"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBFrGvYHp_VFKvEaPZAuJ3j7Vl7NCsedLU" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.testapp.test.NewZoneActivity"
+            android:label="@string/title_activity_new_zone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.SelectPointActivity"
+            android:label="@string/title_activity_new_zone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.ParkingsMapActivity"
+            android:label="@string/title_activity_new_zone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.TaxisMapActivity"
+            android:label="@string/title_activity_new_zone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.MapTipsActivity"
+            android:label="@string/title_activity_map_tips"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.ParkingActivity"
+            android:label="@string/title_activity_parking"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.TaxiActivity"
+            android:label="@string/title_activity_parking"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.BizneDataActivity"
+            android:label="@string/title_activity_bizne_data"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.ActivityGroupActivity"
+            android:label="@string/title_activity_activity_group"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.OffersActivity"
+            android:label="@string/title_activity_offers"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.UserOffersActivity"
+            android:label="@string/title_activity_user_offers"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.UserPrizesActivity"
+            android:label="@string/title_activity_user_prizes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.OnlyActivityGroupActivity"
+            android:label="@string/title_activity_only_activity_group"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.BizneInfoOfferGroupActivity"
+            android:label="@string/title_activity_bizne_info_offer_group"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.PassportActivity"
+            android:label="@string/title_activity_passport"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.testapp.test" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.testapp.test.GCMIntentService" />
+
+        <activity
+            android:name="com.testapp.test.ChatsActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="com.testapp.test.ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+    </application>
+
+</manifest>

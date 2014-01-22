@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/prizebize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/top_action_bar_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Negocio"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:visibility="visible" >
+
+</TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:textStyle="bold"
+                    android:text="Premio  "
+                    android:textColor="#000000" 
+                    android:textSize="13sp">
+                    
+                </TextView>
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:text="Number"
+                    android:textColor="#000000" 
+                    android:id="@+id/prizename" 
+                    android:textSize="13sp">
+                    
+                </TextView>
+        </LinearLayout> 
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:textStyle="bold"
+                    android:textColor="#000000" 
+                    android:text="Vigencia  " 
+                    android:textSize="13sp">
+                    
+                </TextView>
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:text="Mail"
+                    android:textColor="#000000" 
+                    android:id="@+id/prizedate" 
+                    android:textSize="13sp" 
+                    android:layout_weight="1">
+                    
+                </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción  "
+                android:textColor="#000000" 
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prizedescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mail"
+                android:textColor="#000000" 
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/biz_rounded_address"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Eliminar" />
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/biz_rounded_address"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Cerrar" />
+
+        </LinearLayout>
+
+</LinearLayout>

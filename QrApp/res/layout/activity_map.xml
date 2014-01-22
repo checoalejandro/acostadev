@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butActionBarContent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tobActionBarContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/top_action_bar" />
+
+        <fragment
+            android:id="@+id/bizne_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/butActionBarContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/bottom_action_bar" />
+
+    <TextView
+        android:id="@+id/txt_msgmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Haz click en el mapa para asignar un punto"
+        android:textAppearance="@style/subtitle"
+        android:textSize="13sp" />
+ 
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llprize"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/prizebize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/top_action_bar_background"
+            android:paddingLeft="5dp"
+            android:text="Negocio"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textColor="#FFFFFF"
+            android:visibility="visible" >
+
+</TextView>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+                <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold"
+                        android:text="Premio  " android:textSize="13sp"></TextView>
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="Number"
+                        android:id="@+id/prizename" android:textSize="13sp"></TextView>
+        </LinearLayout> 
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+                <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold"
+                        android:text="Vigencia  " android:textSize="13sp"></TextView>
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="Mail"
+                        android:id="@+id/prizedate" android:textSize="13sp" android:layout_weight="1"></TextView><Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/biz_rounded_address"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="Canjear"
+            android:visibility="visible" >
+
+</Button>
+        </LinearLayout> 
+
+</LinearLayout>
