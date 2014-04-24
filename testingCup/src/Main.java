@@ -30,11 +30,11 @@ public class Main {
     
       FileReader fr = new FileReader("input.txt");
       //parser p = new parser(new Lexer(new FileReader(argv[0])));
-//      parser p = new parser(new Lexer(fr));
-//      
-//      
-//     
-//	Object result = p.parse().value;      
+      parser p = new parser(new Lexer(fr));
+      
+      
+     
+	Object result = p.parse().value;      
        
 	int x =0;
 	
