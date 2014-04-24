@@ -1,0 +1,6 @@
+x:integer; x:=NumEntero;
+x:integer; x:=NumEntero;
+x:integer; x:=NumEntero;
+{
+	x:integer; x:=NumEntero;
+}

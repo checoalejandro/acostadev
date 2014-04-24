@@ -1,0 +1,196 @@
+ import java_cup.runtime.*;
+   
+
+parser code {:
+    
+    
+    public void report_error(String message, Object info) {
+   
+        StringBuilder m = new StringBuilder("Error");
+   
+         if (info instanceof java_cup.runtime.Symbol) {
+            
+            java_cup.runtime.Symbol s = ((java_cup.runtime.Symbol) info);
+   
+             if (s.left >= 0) {                
+                  m.append(" in line "+(s.left+1));   
+               	 
+               	  if (s.right >= 0)                    
+                 	 m.append(", column "+(s.right+1));
+            }
+        }
+   
+        m.append(" : "+message);
+   
+        System.err.println(m);
+    }
+   
+    
+    public void report_fatal_error(String message, Object info) {
+        report_error(message, info);
+        System.exit(1);
+    }
+:};
+   
+
+   
+/* ------------Declaration of Terminals and Non Terminals Section----------- */
+   
+
+terminal           SEMI,DOSPUNTOS, DOSPUNTOSEQ, INTEGER, REAL, POINTER, LCORCHETE, RCORCHETE, IF, OF, THEN, WHILE, DO, ARRAY, OPREL, OPARIT, MOD, NUMENT, NUMREAL PLUS, MINUS, TIMES, DIVIDE, LPAREN, RPAREN, EQ, MENORQ, MAYORQ, LOG, COMA, SENO, PUNTO, EXPO, COSENO, TAN, RAIZ, PI, norm, magnitude, dot;
+terminal Integer   NUMBER;
+terminal String    ID;
+   
+non terminal Object     expr_list, expr_part, assign, P, D, Dterm, T, S, Sterm, C, E, Eterm, basico, compuesto;
+non terminal Integer    expr, factor, term, funcion;
+  
+
+/* -------------Precedence and Associatively of Terminals Section----------- */
+      
+  precedence left PLUS, MINUS; 
+  precedence left TIMES, DIVIDE; 
+
+/* ----------------------------Grammar Section-------------------- */
+   
+/*----------------------------------------------   
+   expr_list ::=   expr_list expr_part
+                 | expr_part | expr_part | expr_list 
+              
+   expr_part ::=   expr SEMI
+   expr      ::=   expr PLUS factor
+                 | expr MINUS factor
+                 | factor
+   factor    ::=   factor TIMES term
+                 | factor DIVIDE term
+                 | term
+   term     ::=    LPAREN expr RPAREN
+                 | NUMBER
+                 | ID             
+                 
+----------------------------------------------------*/
+
+   P ::= D SEMI S;
+   
+   D ::= D SEMI Dterm;
+   
+   Dterm ::= ID DOSPUNTOS T;
+   
+   T ::= basico | compuesto;
+   
+   basico ::= INTEGER | REAL;
+   
+   compuesto ::= ARRAY LCORCHETE NUMENT RCORCHETE OF basico
+   			| POINTER BASICO;
+   
+   S ::= S SEMI Sterm;
+   		
+   Sterm ::= ID DOSPUNTOSEQ E
+   		| IF C THEN S
+   		| WHILE C DO S;
+   		
+   C ::= E OPREL Eterm;
+  
+   E ::= E MOD Eterm
+  		| E LCORCHETE Eterm RCORCHETE
+  		| E POINTER
+  		| E OPRAIT Eterm;
+  
+   Eterm ::= NUMENT
+  		| NUM REAL
+  		| ID;
+	
+   expr_list ::= expr_list expr_part
+                 |
+                 expr_part
+                 |
+                 expr_list assign
+                 |
+                 assign
+                 ;
+               
+   expr_part ::= expr:e
+                 {: System.out.println(" = " + e); :}
+                 SEMI
+                 ;
+                 
+    assign ::=   ID:i EQ expr:e
+                 {: Variables.setValue(i,(double) e.intValue()); System.out.println(":Expval=" +e+ "  TS:" +Variables.getValue(i)); :}
+                 SEMI
+                 /*|
+                 ID:i EQ expr_vec:e
+                 {: Variables.setValue(i,(double) e.intValue()); System.out.println(":Expval=" +e+ "  TS:" +Variables.getValue(i)); :}
+                 SEMI*/
+                 ;
+
+    expr     ::= expr:e PLUS factor:f
+                 {: RESULT = new Integer(e.intValue() + f.intValue()); :}
+                 |
+                 expr:e MINUS factor:f
+                 {: RESULT = new Integer(e.intValue() - f.intValue()); :}
+                 |
+                 factor:f
+                 {: RESULT = new Integer(f.intValue()); :}
+                 |
+                 funcion:f
+                 {: RESULT = new Integer(f.intValue()); :}
+                 ;
+    
+    funcion ::= LOG factor:f
+			    {: RESULT = new Integer(Math.log(f.intValue())); :}
+			    |
+			    SENO factor:f
+			    {: RESULT = new Integer(Math.sin(f.intValue())); :}
+			    |
+			    COSENO factor:f
+			    {: RESULT = new Integer(Math.cos(f.intValue)); :}
+			    |
+			    TAN factor:f
+			    {: RESULT = new Integer(Math.tan(f.intValue)); :}
+			    |
+			    RAIZ factor:f
+			    {: RESULT = new Integer(Math.sqrt(f.intValue)); :}
+			    ;
+     /*            
+   expr_vec ::= expr_vec:e COMA factor_vec:f
+                 |
+                 factor_vec:f
+                 ;*/
+   
+   factor   ::= factor:f TIMES term:t
+                 {: RESULT = new Integer(f.intValue() * t.intValue()); :}
+                 |
+                 factor:f DIVIDE term:t
+                 {: RESULT = new Integer(f.intValue() / t.intValue()); :}
+                 |
+                 term:t
+                 {: RESULT = new Integer(t.intValue()); :}
+                 ;
+   /*              
+   factor_vec   ::= factor_vec:f TIMES term_vec:t
+                 |
+                 factor_vec:f DIVIDE term_vec:t
+                 |
+                 term_vec:t
+                 ;*/
+   
+  term      ::= LPAREN expr:e RPAREN
+                 {: RESULT = e; :}
+                 |
+                 NUMBER:n
+                 {: RESULT = n; :}
+                 |
+                 ID:i
+                 {: RESULT = (int)Variables.getValue(i); :}
+                 ;
+  /*
+   term_vec  ::= MENORQ expr_vec:e MAYORQ
+                 {: RESULT = e; :}
+                 |
+                 NUMBER:n
+                 {: RESULT = n; :}
+                 |
+                 ID:i
+                 {: RESULT = (int)Variables.getValue(i); :}
+                 ;
+  */
+ 
