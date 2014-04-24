@@ -29,7 +29,7 @@ public class Main {
     try {
     
       FileReader fr = new FileReader("input.txt");
-      //parser p = new parser(new Lexer(new FileReader(argv[0])));
+      //parser p = new parser(new Lexer(new FileReader(argv[0]))); aaaaaaaaaaaaaaaa
       parser p = new parser(new Lexer(fr));
       
       
