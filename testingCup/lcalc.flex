@@ -36,6 +36,7 @@ oparit			= [+-][*]
    
 <YYINITIAL> {
    
+   ":="               { System.out.print(":= "); return symbol(sym.ASIGNACION); }
     ";"                { return symbol(sym.PCOMA); }
     "integer"          { System.out.print("integer"); return symbol(sym.INTEGER); }
     ":"                { System.out.print(":"); return symbol(sym.DOSP); }
@@ -43,7 +44,7 @@ oparit			= [+-][*]
     "]"                { System.out.print(" ] "); return symbol(sym.CCERRADO); }
     "real"             { System.out.print("real"); return symbol(sym.REAL); }
     "array"            { System.out.print("array"); return symbol(sym.ARRAY); }
-    "NumEntero"        { System.out.print("NumEntero"); return symbol(sym.NUMENTERO); }
+    {NumEntero}        { System.out.print("NumEntero"); return symbol(sym.NUMENTERO); }
     "of"               { System.out.print("of"); return symbol(sym.OF); }
     "basico"           { System.out.print("basico"); return symbol(sym.BASICO); }
     "id"               { System.out.print("id "); return symbol(sym.ID); }
@@ -55,7 +56,6 @@ oparit			= [+-][*]
      "NumReal"         { System.out.print("NumReal "); return symbol(sym.NUMREAL); }
     "mod"              { System.out.print("mod"); return symbol(sym.MOD); }
     "oparit"           { System.out.print("oparit"); return symbol(sym.OPARIT); }
-    ":="               { System.out.print(":= "); return symbol(sym.ASIGNACION); }
     "^"                { System.out.print("^"); return symbol(sym.POTENCIA); }
     "{"				   { System.out.print("{\n\t"); return symbol(sym.KOPEN); }
     "}"				   { System.out.print("\n}"); return symbol(sym.KCLOSE); }

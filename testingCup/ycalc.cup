@@ -67,7 +67,7 @@ non terminal Object     p,d,t,basico,compuesto,s,c,e,eterm, sterm,dterm;
                  
 ----------------------------------------------------*/
    
-   	p 			::= d PCOMA s | KOPEN p KCLOSE | p KOPEN p KCLOSE;
+   	p 			::= d PCOMA s PCOMA; /*| KOPEN p KCLOSE | p KOPEN p KCLOSE;*/
  
  	d 			::= d PCOMA dterm | dterm;
  	
