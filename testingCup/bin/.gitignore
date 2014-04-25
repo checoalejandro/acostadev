@@ -1,5 +1,12 @@
-/input.txt
 /CUP$parser$actions.class
-/Lexer.class
+/GenerateLexer.class
+/GenerateParser.class
+/Lexer.java~
+/Main.class
+/Makefile
+/README
+/Variables.class
+/output.good
 /parser.class
 /sym.class
+/test.txt

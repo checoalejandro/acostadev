@@ -27,7 +27,8 @@ WhiteSpace     = {LineTerminator} | [ \t\f]
 
 dec_int_lit 	= 0 | [1-9][0-9]*("."[1-9][0-9]*)?
 dec_int_id 		= [A-Za-z_][A-Za-z_0-9]*
-NumEntero		= [0-9]
+NumEntero		= [0-9]*
+NumReal			= [0-9]+("."[0-9]+)?
 oprel			= [<>"==""or""and"]
 oparit			= [+-][*]
  
@@ -53,7 +54,7 @@ oparit			= [+-][*]
     "while"            { System.out.print(" while "); return symbol(sym.WHILE); }
     "do"               { System.out.print("do"); return symbol(sym.DO); }
     "oprel"            { System.out.print("oprel"); return symbol(sym.OPREL); }
-     "NumReal"         { System.out.print("NumReal "); return symbol(sym.NUMREAL); }
+    {NumReal}          { System.out.print("NumReal "); return symbol(sym.NUMREAL); }
     "mod"              { System.out.print("mod"); return symbol(sym.MOD); }
     "oparit"           { System.out.print("oparit"); return symbol(sym.OPARIT); }
     "^"                { System.out.print("^"); return symbol(sym.POTENCIA); }
